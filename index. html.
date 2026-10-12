@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArabCoin (ARAB)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #11100c;
+      color: #f5d36b;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px;
+      background: #20190c;
+    }
+    h1 { font-size: 38px; }
+    .coin {
+      font-size: 70px;
+      margin: 15px;
+    }
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .panel {
+      background: #211d14;
+      padding: 22px;
+      border: 1px solid #b88a2c;
+      border-radius: 14px;
+      overflow-wrap: anywhere;
+    }
+    p { color: #f5f0df; line-height: 1.7; }
+    a { color: #f5d36b; }
+    footer { padding: 25px; color: #bdb5a0; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="coin">🪙</div>
+    <h1>ARAB COIN</h1>
+    <p>ArabCoin (ARAB)</p>
+  </header>
+  <main>
+    <section class="panel">
+      <h2>Tentang ArabCoin</h2>
+      <p>
+        Selamat datang di halaman informasi ArabCoin.
+        Situs ini merupakan halaman informasi proyek token.
+      </p>
+      <h3>Informasi Kontrak</h3>
+      <p>Jaringan: BNB Smart Chain</p>
+      <p>Nama token: ArabCoin</p>
+      <p>Simbol: ARAB</p>
+      <p>Alamat kontrak:</p>
+      <p>0xf4F5B51FfE148c816e7677F783f9938Be19D465B</p>
+      <p>
+        <a href="https://bscscan.com/address/0xf4F5B51FfE148c816e7677F783f9938Be19D465B">
+          Periksa kontrak di BscScan
+        </a>
+      </p>
+    </section>
+  </main>
+  <footer>
+    Informasi token bukan jaminan nilai pasar atau keamanan token.
+  </footer>
+</body>
+</html>
