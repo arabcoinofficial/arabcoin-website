@@ -3,73 +3,232 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ArabCoin (ARAB)</title>
+  <meta name="description" content="Website informasi resmi ArabCoin (ARAB), token di jaringan BNB Smart Chain.">
+  <meta name="theme-color" content="#11100c">
+  <title>ArabCoin (ARAB) | Informasi Resmi</title>
+
   <style>
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #11100c;
       color: #f5d36b;
-      text-align: center;
     }
+
     header {
-      padding: 40px 20px;
-      background: #20190c;
+      padding: 35px 18px;
+      text-align: center;
+      background: linear-gradient(135deg, #20190c, #080807);
+      border-bottom: 1px solid #8d6b24;
     }
-    h1 { font-size: 38px; }
-    .coin {
-      font-size: 70px;
-      margin: 15px;
+
+    .logo {
+      width: min(85%, 300px);
+      height: auto;
+      object-fit: contain;
+      margin: 12px auto;
     }
+
+    h1 { font-size: clamp(30px, 6vw, 44px); margin: 12px 0; }
+    h2 { font-size: 24px; }
+    h3 { color: #f5d36b; }
+
+    header p { color: #f5f0df; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding: 16px 10px;
+      background: #211d14;
+    }
+
+    a { color: #f5d36b; }
+    nav a { text-decoration: none; font-size: 14px; }
+    a:hover { color: #fff1b0; }
+
     main {
-      max-width: 700px;
-      margin: 30px auto;
-      padding: 20px;
+      max-width: 850px;
+      margin: 28px auto;
+      padding: 0 16px;
     }
+
     .panel {
       background: #211d14;
       padding: 22px;
-      border: 1px solid #b88a2c;
+      margin-bottom: 20px;
+      border: 1px solid #8d6b24;
       border-radius: 14px;
       overflow-wrap: anywhere;
     }
-    p { color: #f5f0df; line-height: 1.7; }
-    a { color: #f5d36b; }
-    footer { padding: 25px; color: #bdb5a0; }
+
+    p, li {
+      color: #f5f0df;
+      line-height: 1.75;
+    }
+
+    .label { color: #c9bd9c; }
+    .address { font-size: 14px; overflow-wrap: anywhere; }
+
+    .button {
+      display: inline-block;
+      margin: 7px 5px 0 0;
+      padding: 11px 16px;
+      border: 1px solid #b88a2c;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .notice {
+      border-left: 3px solid #d5a83c;
+      padding-left: 14px;
+    }
+
+    footer {
+      padding: 25px 16px;
+      text-align: center;
+      background: #090908;
+      color: #bdb5a0;
+    }
+
+    footer p { font-size: 14px; }
+
+    @media (max-width: 480px) {
+      .panel { padding: 17px; }
+      nav { gap: 12px; }
+    }
   </style>
 </head>
+
 <body>
   <header>
-    <div class="coin">🪙</div>
+    <img class="logo" src="Arabcoin.jpeg" alt="Logo ArabCoin"
+         onerror="this.style.display='none'">
     <h1>ARAB COIN</h1>
     <p>ArabCoin (ARAB)</p>
+    <p>Informasi proyek dan transparansi token</p>
   </header>
-<img src="Arabcoin.jpeg" alt="ArabCoin Logo">
+
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#token">Informasi Token</a>
+    <a href="#keamanan">Keamanan</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
   <main>
-    <section class="panel">
+    <section class="panel" id="tentang">
       <h2>Tentang ArabCoin</h2>
       <p>
-        Selamat datang di halaman informasi ArabCoin.
-        Situs ini merupakan halaman informasi proyek token.
+        ArabCoin (ARAB) adalah proyek token digital yang diterbitkan
+        di jaringan BNB Smart Chain. Website ini menyediakan informasi
+        mengenai token, alamat kontrak, dan perkembangan proyek.
       </p>
-      <h3>Informasi Kontrak</h3>
-      <p>Jaringan: BNB Smart Chain</p>
-      <p>Nama token: ArabCoin</p>
-      <p>Simbol: ARAB</p>
-      <p>Alamat kontrak:</p>
-      <p>0xf4F5B51FfE148c816e7677F783f9938Be19D465B</p>
       <p>
-        <a href="https://bscscan.com/address/0xf4F5B51FfE148c816e7677F783f9938Be19D465B">
-          Periksa kontrak di BscScan
+        Informasi tentang kegunaan token, layanan, dan pengembangan
+        selanjutnya akan diperbarui sesuai dengan fitur yang benar-benar
+        telah tersedia.
+      </p>
+    </section>
+
+    <section class="panel" id="token">
+      <h2>Informasi Token</h2>
+      <p><span class="label">Nama token:</span> ArabCoin</p>
+      <p><span class="label">Simbol:</span> ARAB</p>
+      <p><span class="label">Jaringan:</span> BNB Smart Chain (BEP-20)</p>
+      <p><span class="label">Suplai maksimum:</span> 1.000.000.000 ARAB</p>
+      <p><span class="label">Harga:</span> Lihat data pasar terbaru; harga tidak dijamin.</p>
+      <p><span class="label">Status listing exchange:</span>
+        Belum dikonfirmasi untuk exchange terpusat.
+      </p>
+
+      <h3>Alamat Kontrak Resmi</h3>
+      <p class="address">
+        0xf4F5B51FfE148c816e7677F783f9938Be19D465B
+      </p>
+
+      <a class="button"
+         href="https://bscscan.com/address/0xf4F5B51FfE148c816e7677F783f9938Be19D465B"
+         target="_blank" rel="noopener noreferrer">
+        Lihat di BscScan
+      </a>
+
+      <a class="button"
+         href="https://pancakeswap.finance/"
+         target="_blank" rel="noopener noreferrer">
+        PancakeSwap
+      </a>
+
+      <p class="notice">
+        Suplai maksimum bukan berarti seluruh token sudah beredar.
+        Data suplai beredar dan distribusi pemegang perlu diperiksa
+        langsung melalui blockchain.
+      </p>
+    </section>
+
+    <section class="panel" id="keamanan">
+      <h2>Transparansi dan Risiko</h2>
+      <ul>
+        <li>Kode kontrak dapat diperiksa melalui BscScan.</li>
+        <li>Verifikasi kode sumber bukan jaminan keamanan atau audit.</li>
+        <li>Likuiditas, distribusi pemegang, dan aktivitas perdagangan
+            dapat berubah dari waktu ke waktu.</li>
+        <li>Token digital berisiko tinggi; harga dapat turun dan
+            token mungkin sulit dijual jika likuiditas rendah.</li>
+        <li>Jangan mengirim token ke alamat yang tidak dikenal atau
+            membagikan seed phrase dan private key.</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="roadmap">
+      <h2>Roadmap Pengembangan</h2>
+      <p><strong>Fase 1 — Dokumentasi</strong></p>
+      <p>Melengkapi website, informasi kontrak, dan dokumentasi proyek.</p>
+
+      <p><strong>Fase 2 — Evaluasi</strong></p>
+      <p>Memeriksa distribusi token, likuiditas, keamanan, dan transparansi.</p>
+
+      <p><strong>Fase 3 — Pengembangan komunitas</strong></p>
+      <p>Membangun komunikasi resmi dan mengumpulkan masukan komunitas.</p>
+
+      <p><strong>Fase 4 — Evaluasi listing</strong></p>
+      <p>Mempelajari persyaratan platform data kripto dan exchange.
+         Pengajuan maupun penerimaan listing tidak dijamin.</p>
+
+      <p class="notice">
+        Roadmap merupakan rencana, bukan janji hasil atau keuntungan.
+        Tahap yang belum selesai tidak boleh dianggap sudah terlaksana.
+      </p>
+    </section>
+
+    <section class="panel" id="kontak">
+      <h2>Kontak Resmi</h2>
+      <p>Untuk pertanyaan mengenai proyek ArabCoin:</p>
+      <p>
+        <a href="mailto:zayyanfathur@gmail.com">
+          zayyanfathur@gmail.com
         </a>
+      </p>
+      <p>
+        Gunakan alamat kontrak di atas untuk memastikan bahwa token
+        yang diperiksa benar-benar token ARAB yang dimaksud.
       </p>
     </section>
   </main>
+
   <footer>
-    Informasi token bukan jaminan nilai pasar atau keamanan token.
-    <p>Kontak resmi ArabCoin:
-  <a href="mailto:zayyanfathur@gmail.com">zayyanfathur@gmail.com</a>
-</p>
+    <p>ArabCoin (ARAB) — Halaman informasi proyek.</p>
+    <p>
+      Website ini bukan nasihat investasi dan tidak menjamin nilai,
+      keamanan, likuiditas, atau keuntungan token.
+    </p>
+    <p>&copy; 2026 ArabCoin. Informasi dapat diperbarui sewaktu-waktu.</p>
   </footer>
 </body>
 </html>
